@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "img":"./image/feature1.png",
+        "categorie":"feature",
+        "title":"Eclax Cone",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":850
+    },
+    {
+        "id":2,
+        "img":"./image/feature2.jpg",
+        "categorie":"feature",
+        "title":"Flower Pot Light",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":1250
+    },
+    {
+        "id":3,
+        "img":"./image/feature3.png",
+        "categorie":"feature",
+        "title":"Korlux Hanging",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":550
+    },
+    {
+        "id":4,
+        "img":"./image/feature4.png",
+        "categorie":"feature",
+        "title":"Eclax Cage",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":2250
+    },
+    {
+        "id":5,
+        "img":"./image/product1.jpg",
+        "categorie":"product",
+        "title":"Bell Lamp",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":450
+    },
+    {
+        "id":6,
+        "img":"./image/product2.png",
+        "categorie":"product",
+        "title":"Eclax lycra Cone",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":1350
+    },
+    {
+        "id":7,
+        "img":"./image/product3.jpg",
+        "categorie":"product",
+        "title":"Talia Pendent",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":1550
+    },
+    {
+        "id":8,
+        "img":"./image/product4.png",
+        "categorie":"product",
+        "title":"Eclax Semishperical",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":850
+    },
+    {
+        "id":9,
+        "img":"./image/product5.png",
+        "categorie":"product",
+        "title":"Eclax Cone Set",
+        "dis":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae recusandae doloremque, accusantium sequi quidem saepe.",
+        "price":3550
+    }
+]

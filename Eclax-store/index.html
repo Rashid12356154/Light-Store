@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclax Store</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header>
+         <nav class="grid bg-primary z-50 shadow-sm grid-cols-1 gap-3 p-4 justify-between lg:flex lg:px-24 lg:m-auto">
+            <div class="text-center">
+                <h1 class="text-secondary uppercase text-2xl" style="letter-spacing: 4px;">eclax</h1>
+            </div>
+            <div class="flex justify-between item-center">
+                <a href="#" class="cursor-pointer lg:hidden" id="nav-btn">
+                    <img src="./image/baseline-menu-24px.png" alt="">
+                </a>
+               <div class="flex gap-4">
+                <a href="#" class="flex flex-col mt-[-10px] cursor-pointer" id="baskit-btn">
+                    <span class="bg-accent w-5 h-5 rounded-full text-sm flex justify-center items-center text-primary font-medium shadow-md self-end" id="count">1 </span>
+                    <img src="./image/outline-shopping_basket-24px.png" alt=""  class="w-6">
+                </a>
+                <a href="#" class="cursor-pointer">
+                    <img src="./image/baseline-perm_identity-24px.png" alt="">
+                </a>
+               </div>
+            </div>
+         </nav>
+         <ul class="absolute hidden top-24 bg-primary shadow-md right-0 w-[70%] h-screen lg:flex lg:bg-transparent lg:w-[40%] lg:h-0 lg:shadow-none lg:top-[-15px] lg:gap-6 lg:left-[25%]" id="navbar">
+            <li class="my-8 transition-colors  ease-in-out text-center text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Home</a></li>
+            <li class="my-8 transition-colors  ease-in-out text-center text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Product</a></li>
+            <li class="my-8 transition-colors  ease-in-out text-center text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">About Us</a></li>
+            <li class="my-8 transition-colors  ease-in-out text-center text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Contact Us</a></li>
+         </ul>
+         <div class=" flex flex-col gap-4 items-center mt-1 md:flex-row md:w-[85%] md:m-auto h-screen">
+            <div class="md:w-full md:h-[650px] -z-20 mt-[-65px]"> 
+                <img src="./image/hero.jpg" alt="" class="w-full h-full">
+            </div>
+            <div class="grid gap-4 place-items-center p-4 md:w-[60%] md:place-items-start ">
+                <h1 class="text-secondary text-3xl font-semibold uppercase w-[80%] text-center md:text-left">unlock the future with willet</h1>
+                <h1 class="text-secondary text-xl font-medium uppercase w-[70%] text-center md:text-left">  experience brilliance with eclax light</h1>
+                <p class="text-secondary text-lg text-center md:text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam facilis libero sed, incidunt tempore inventore itaque quam nesciunt, earum dolore soluta iure distinctio dicta delectus, reprehenderit corrupti dolorem. Hic, itaque?</p>
+                <a href="#" class="bg-accent py-2 px-4 rounded-md shadow-md capitalize text-primary font-semibold hover:shadow-lg hover:shadow-[#2ee69c71] transition-all ease-in-out cursor-pointer">explore more</a>
+            </div>
+         </div>
+    </header>
+    <!-- Shopping Cart-->
+        <div class="bg-primary p-4 shadow-sm hidden md:w-[40%] absolute top-8 right-0" id="cart">
+            <span id="close" class="cursor-pointer my-4">
+                <img src="./image/baseline-close-24px.png" alt="">
+            </span>
+            <h1 class="text-secondary text-3xl font-bold mt-4">Shopping Cart</h1>
+            <div id="empty" class="hidden">
+                <h1 class="text-4xl text-secondary font-medium mt-6">Your Cart Empty!</h1>
+            </div>
+            <div id="show-cart" class="mt-6">
+                
+            </div>
+
+            <div class="mt-6 flex justify-between items-center">
+                <h1 class="text-secondary text-xl font-medium">Total Amount:</h1>
+                <h1 class="text-secondary text-xl font-medium" id="total">Rs:5550</h1>
+            </div>
+            <button class="mt-6 bg-secondary py-2 px-4 text-primary uppercase text-xl rounded-md shadow-md m-auto w-[50%] text-center" onclick="Checkout()">checkout</button>
+        </div>
+     <!-- Close Shopping Cart-->
+    <!-- Feature Product-->
+        <div class="p-4 mt-52 md:mt-4">
+            <div class="grid gap-3 place-items-center">
+                <h1 class="text-secondary text-2xl font-bold capitalize">feature product</h1>
+                <span class="w-12 h-1 bg-accent rounded-sm"></span>
+            </div>
+            <div id="feature" class="mt-4 overflow-hidden grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[85%] m-auto">
+                
+            </div>
+        </div>
+    <!--close feature product-->
+    <!-- Our Store-->
+        <div class="mt-20 p-4 flex flex-col gap-4 md:w-[80%] md:items-center md:m-auto md:mt-20 lg:flex-row">
+            <div class="w-full">
+                <img src="./image/wood-led.jpg" alt="">
+            </div>
+            <div class="grid gap-4  lg:w-[80%]">
+                <div class="grid gap-3 place-items-center lg:items-start  lg:text-left">
+                    <h1 class="text-secondary text-2xl font-bold capitalize ">our store</h1>
+                    <span class="w-12 h-1 bg-accent rounded-sm"></span>
+                </div>
+                <p class="text-secondary text-lg text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iusto optio, enim est hic qui ullam dolorum fuga at aspernatur ipsum tempore labore dolores modi officia id sit harum quo. Eius, reprehenderit quas! Natus odit ipsam, reiciendis id fugiat sit.</p>
+                <a href="#" class="bg-accent py-2 px-4 w-[150px] text-center m-auto rounded-sm shadow-md text-lg text-primary font-medium hover:shadow-lg hover:shadow-[#2ee69c71]">Discover</a>
+                <div class="flex items-center gap-5 justify-center mt-4">
+                    <a href="#" class="hover:bg-primary hover:w-8 hover:h-8 hover:rounded-full hover:shadow-xl hover:flex hover:justify-center hover:items-center">
+                        <img src="./image/facebook-f.png" alt="" class="w-4">
+                    </a>
+                    <a href="#" class="hover:bg-primary hover:w-8 hover:h-8 hover:rounded-full hover:shadow-xl hover:flex hover:justify-center hover:items-center"> 
+                        <img src="./image/linkedin-in.png" alt="" class="w-6">
+                    </a>
+                    <a href="#" class="hover:bg-primary hover:w-8 hover:h-8 hover:rounded-full hover:shadow-xl hover:flex hover:justify-center hover:items-center">
+                        <img src="./image/twitter.png" alt=""  class="w-6">
+                    </a>
+                </div>
+            </div>
+        </div>
+     <!--Close Our Store-->
+     <!--Our Product-->
+     <div class="p-4 mt-4">
+        <div class="grid gap-3 place-items-center">
+            <h1 class="text-secondary text-2xl font-bold capitalize">feature product</h1>
+            <span class="w-12 h-1 bg-accent rounded-sm"></span>
+        </div>
+        <div id="product" class="mt-4 overflow-hidden grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-[85%] m-auto">
+            
+        </div>
+    </div>
+     <!--Close Our Product-->
+     <!--Our App-->
+        <div class="p-4 mt-4">
+            <div class="grid gap-3 place-items-center">
+                <h1 class="text-secondary text-2xl font-bold capitalize">Get App</h1>
+                <span class="w-12 h-1 bg-accent rounded-sm"></span>
+            </div>
+            <div class="flex flex-col gap-4 items-center mt-4 lg:flex-row lg:justify-center  lg:gap-8">
+                <div class="grid gap-4 md:place-items-center md:w-[85%] md:text-center lg:w-[40%] lg:text-left lg:place-items-start">
+                    <h1 class="text-secondary text-2xl font-medium capitalize">Download Our App Now</h1>
+                    <h1 class="text-secondary font-medium text-lg capitalize">For using first time app get more discount.</h1>
+                    <p class="text-secondary font-light text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis rem amet earum in assumenda dolore, delectus soluta eveniet, iusto sit rerum, odit perferendis vitae illo ab minus officiis accusamus debitis!</p>
+                    <div class="flex gap-6 justify-center">
+                        <a href="#" class="flex gap-3 bg-accent py-1 px-4 items-center rounded-sm shadow-md text-primary font-medium">
+                            <img src="./image/Group 9.png" alt="" class="w-6 h-6">
+                            <div class="grid">
+                                <span>Download on the</span>
+                                <span>App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="flex gap-3 items-center bg-accent py-1 px-4 rounded-sm shadow-md text-primary font-medium">
+                            <img src="./image/Group 145.png" alt="" class="w-6 h-6">
+                            <div class="grid">
+                                <span>get it on</span>
+                                <span>Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-6 ">
+                     <img src="./image/mobile.png" alt="">
+                </div>
+            </div>
+        </div>
+     <!-- Close Our App-->
+
+     <!--Subscribe -->
+        <div class="mt-6 bg-accent p-4 flex flex-col-reverse gap-4 md:flex-row md:px-24 md:py-12">
+            <div class="grid gap-4 md:w-[80%]">
+                <h1 class="text-secondary font-bold capitalize text-4xl w-[85%]">Subscribe Our Newslatter</h1>
+                <p  class="text-secondary font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam expedita voluptatibus a ad temporibus harum ipsam? Vero ipsa perferendis temporibus, aut eveniet pariatur esse assumenda deserunt odio consectetur, inventore tempore consequatur veritatis iure fugiat amet deleniti nam ipsam molestiae laborum iste, voluptatem blanditiis placeat quia! Cupiditate, esse natus. Beatae, cum?</p>
+            </div>
+            <div class="mt-6 flex w-full bg-primary h-14 rounded-md items-center  shadow-sm">
+                <input type="text" placeholder="Enter Your Email" class="flex-1 outline-none border-none rounded-md px-4">
+                <button class="bg-secondary h-16 hover:shadow-lg cursor-pointer  px-4 text-primary font-medium uppercase shadow-md rounded-sm">Subscribe</button>
+            </div>
+        </div>
+     <!--Close Subscribe -->
+     <!--Footer -->
+        <footer class="p-4 mt-6">
+            <div class="grid grid-cols-2 border-b-2 border-b-slate-100 place-items-center text-center md:grid-cols-4">
+                <div class="mt-4">
+                    <h1 class="text-secondary uppercase text-2xl" style="letter-spacing: 4px;">eclax</h1>
+                    <ul>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Home</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Product</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">About Us</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Contact Us</a></li>
+                  
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h1 class="text-secondary uppercase text-2xl">about us</h1>
+                    <ul>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Support Center</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Customer Support</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">About Us</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Copy Right</a></li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <h1 class="text-secondary uppercase text-2xl">Product</h1>
+                    <ul>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Watch Product</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Shoes Product</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Book Store</a></li>
+                        <li class="my-8 transition-colors  ease-in-out  text-xl text-secondary font-medium"><a href="#" class="hover:border-b-2 hover:border-b-accent py-3 hover:text-accent my-6">Electric Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="mt-4 self-start">
+                    <h1 class="text-secondary uppercase text-2xl">Social Network</h1>
+                    <div class="flex gap-6 mt-6 items-center justify-center">
+                        <a href="#">
+                            <img src="./image/facebook-f-b.png" alt="" class="w-4">
+                        </a>
+                        <a href="#">
+                            <img src="./image/linkedin-in-b.png" alt="" class="w-6">
+                        </a>
+                        <a href="#">
+                            <img src="./image/twitter-b.png" alt="" class="w-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-center  text-secondary font-medium text-xl py-4">Rashid Developer. All right reserved.</h1>
+        </footer>
+     <!-- Close Footer-->
+
+     <script src="app.js"></script>
+</body>
+</html>
